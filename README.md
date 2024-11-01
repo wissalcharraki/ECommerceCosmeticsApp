@@ -59,6 +59,52 @@ To get started with this project, please visit the [documentation](https://githu
     </li>
 </ul>
 
+<h2>How to Run the Project</h2>
+
+<p>Follow these steps to set up and run the E-Commerce Cosmetics Application locally:</p>
+
+<ol>
+    <li><strong>Clone the repository:</strong>
+        <pre><code>git clone https://github.com/wissalcharraki/ECommerceCosmeticsApp.git</code></pre>
+    </li>
+    <li><strong>Navigate to the project directory:</strong>
+        <pre><code>cd ECommerceCosmeticsApp</code></pre>
+    </li>
+    <li><strong>Install dependencies:</strong>
+        <p>Make sure you have <a href="https://getcomposer.org/" target="_blank">Composer</a> installed, then run:</p>
+        <pre><code>composer install</code></pre>
+    </li>
+    <li><strong>Configure the environment:</strong>
+        <ul>
+            <li>Rename the <code>.env.example</code> file to <code>.env</code>.</li>
+            <li>Update the database credentials in the <code>.env</code> file:</li>
+            <pre><code>
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+            </code></pre>
+        </ul>
+    </li>
+    <li><strong>Generate the application key:</strong>
+        <pre><code>php artisan key:generate</code></pre>
+    </li>
+    <li><strong>Run database migrations:</strong>
+        <p>This will create the necessary tables in your database:</p>
+        <pre><code>php artisan migrate</code></pre>
+    </li>
+    <li><strong>Start the development server:</strong>
+        <p>You can start the server with the following command:</p>
+        <pre><code>php artisan serve</code></pre>
+        <p>The application will now be accessible at <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>.</p>
+    </li>
+</ol>
+
+<p>You're all set! Visit <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your browser to view and use the E-Commerce Cosmetics Application.</p>
+
+
 <p>These technologies were selected to optimize the application's performance, security, and ease of use, making it suitable for both administrators and customers looking for an enhanced online shopping experience.</p>
 
 ### Demonstration
